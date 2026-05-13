@@ -1,0 +1,22 @@
+
+module test_board (SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7);
+input [17:0]SW;
+input [3:0]KEY;
+output [17:0]LEDR;
+output [3:0]LEDG;
+output [6:0]HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7;
+
+	assign LEDR = SW;
+	assign LEDG = KEY;
+	assign HEX7 = 7'B1000000;  //0
+	assign HEX6 = 7'B0011001;  //4
+	assign HEX5 = 7'B1000000;  //0
+	assign HEX4 = 7'B0110000;  //3
+	assign HEX3 = 7'B0100100;  //2
+	assign HEX2 = 7'B1000000;  //0
+	assign HEX1 = 7'B1111001;  //1
+	assign HEX0 = 7'B0000000;  //8
+	
+endmodule
+
+
